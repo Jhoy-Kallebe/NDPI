@@ -144,10 +144,14 @@ public class TelaPerfilAluno extends javax.swing.JFrame {
         borderCinco.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 102, 255)));
         getContentPane().add(borderCinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 270, 304, 1));
 
+        lblProfile.setForeground(new java.awt.Color(254, 254, 254));
         lblProfile.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblProfile.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/Ndpi/img/profile.png"))); // NOI18N
         lblProfile.setText("Profile");
-        lblProfile.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(lblProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 11, 60, 68));
+        lblProfile.setBorder(null);
+        lblProfile.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        lblProfile.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        getContentPane().add(lblProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, 80, 90));
 
         lblId.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         lblId.setForeground(new java.awt.Color(255, 255, 255));
@@ -194,23 +198,28 @@ public class TelaPerfilAluno extends javax.swing.JFrame {
         getContentPane().add(txtNomeOficina, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, 80, 30));
         getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 305, 400, 10));
 
-        btnRemove.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnRemove.setForeground(new java.awt.Color(231, 76, 60));
+        btnRemove.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/Ndpi/img/person-remove.png"))); // NOI18N
+        btnRemove.setBorder(null);
+        btnRemove.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnRemove.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnRemoveMouseClicked(evt);
             }
         });
-        getContentPane().add(btnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 31, 40, 40));
+        getContentPane().add(btnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 50, 50));
 
-        btnEdita.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnEdita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/Ndpi/img/edit-person.png"))); // NOI18N
+        btnEdita.setBorder(null);
+        btnEdita.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnEdita.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnEditaMouseClicked(evt);
             }
         });
-        getContentPane().add(btnEdita, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 31, 40, 40));
+        getContentPane().add(btnEdita, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 50, 50));
 
-        setSize(new java.awt.Dimension(470, 530));
+        setSize(new java.awt.Dimension(460, 530));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

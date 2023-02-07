@@ -66,150 +66,151 @@ public class TelaLogin extends javax.swing.JFrame {
     }
 
 
-   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-   private void initComponents() {
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
 
-      jLabel1 = new javax.swing.JLabel();
-      jLabel2 = new javax.swing.JLabel();
-      jLabel3 = new javax.swing.JLabel();
-      jPanel1 = new javax.swing.JPanel();
-      borderUm = new javax.swing.JLabel();
-      borderDois = new javax.swing.JLabel();
-      lblVer = new javax.swing.JLabel();
-      txtSenhaVisivel = new javax.swing.JTextField();
-      txtSenha = new javax.swing.JPasswordField();
-      txtUsu = new javax.swing.JTextField();
-      btnSubmit = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        borderUm = new javax.swing.JLabel();
+        borderDois = new javax.swing.JLabel();
+        lblVer = new javax.swing.JLabel();
+        txtSenhaVisivel = new javax.swing.JTextField();
+        txtSenha = new javax.swing.JPasswordField();
+        txtUsu = new javax.swing.JTextField();
+        btnSubmit = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
-      jLabel1.setText("jLabel1");
+        jLabel1.setText("jLabel1");
 
-      jLabel2.setText("jLabel2");
+        jLabel2.setText("jLabel2");
 
-      setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-      setResizable(false);
-      getContentPane().setLayout(null);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+        getContentPane().setLayout(null);
 
-      jLabel3.setText("Profile");
-      jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-      getContentPane().add(jLabel3);
-      jLabel3.setBounds(420, 89, 60, 60);
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(100, 100, 100)));
+        jPanel1.setPreferredSize(new java.awt.Dimension(328, 336));
+        jPanel1.setLayout(null);
 
-      jPanel1.setBackground(new java.awt.Color(51, 51, 51));
-      jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(100, 100, 100)));
-      jPanel1.setPreferredSize(new java.awt.Dimension(328, 336));
-      jPanel1.setLayout(null);
+        borderUm.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(150, 150, 150)));
+        jPanel1.add(borderUm);
+        borderUm.setBounds(40, 112, 250, 2);
 
-      borderUm.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(150, 150, 150)));
-      jPanel1.add(borderUm);
-      borderUm.setBounds(40, 112, 250, 2);
+        borderDois.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(150, 150, 150)));
+        jPanel1.add(borderDois);
+        borderDois.setBounds(40, 172, 250, 2);
 
-      borderDois.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(150, 150, 150)));
-      jPanel1.add(borderDois);
-      borderDois.setBounds(40, 172, 250, 2);
+        lblVer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/Ndpi/img/eye.png"))); // NOI18N
+        lblVer.setBorder(null);
+        lblVer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblVer.setNextFocusableComponent(txtSenhaVisivel);
+        lblVer.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblVerMouseClicked(evt);
+            }
+        });
+        jPanel1.add(lblVer);
+        lblVer.setBounds(260, 140, 20, 30);
 
-      lblVer.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-      lblVer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-      lblVer.setNextFocusableComponent(txtSenhaVisivel);
-      lblVer.addMouseListener(new java.awt.event.MouseAdapter() {
-         public void mouseClicked(java.awt.event.MouseEvent evt) {
-            lblVerMouseClicked(evt);
-         }
-      });
-      jPanel1.add(lblVer);
-      lblVer.setBounds(270, 140, 14, 20);
+        txtSenhaVisivel.setBackground(new java.awt.Color(51, 51, 51));
+        txtSenhaVisivel.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        txtSenhaVisivel.setForeground(new java.awt.Color(255, 255, 255));
+        txtSenhaVisivel.setText("Senha");
+        txtSenhaVisivel.setBorder(null);
+        txtSenhaVisivel.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtSenhaVisivelFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtSenhaVisivelFocusLost(evt);
+            }
+        });
+        txtSenhaVisivel.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtSenhaVisivelKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtSenhaVisivelKeyReleased(evt);
+            }
+        });
+        jPanel1.add(txtSenhaVisivel);
+        txtSenhaVisivel.setBounds(45, 135, 238, 38);
 
-      txtSenhaVisivel.setBackground(new java.awt.Color(51, 51, 51));
-      txtSenhaVisivel.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-      txtSenhaVisivel.setForeground(new java.awt.Color(255, 255, 255));
-      txtSenhaVisivel.setText("Senha");
-      txtSenhaVisivel.setBorder(null);
-      txtSenhaVisivel.addFocusListener(new java.awt.event.FocusAdapter() {
-         public void focusGained(java.awt.event.FocusEvent evt) {
-            txtSenhaVisivelFocusGained(evt);
-         }
-         public void focusLost(java.awt.event.FocusEvent evt) {
-            txtSenhaVisivelFocusLost(evt);
-         }
-      });
-      txtSenhaVisivel.addKeyListener(new java.awt.event.KeyAdapter() {
-         public void keyPressed(java.awt.event.KeyEvent evt) {
-            txtSenhaVisivelKeyPressed(evt);
-         }
-         public void keyReleased(java.awt.event.KeyEvent evt) {
-            txtSenhaVisivelKeyReleased(evt);
-         }
-      });
-      jPanel1.add(txtSenhaVisivel);
-      txtSenhaVisivel.setBounds(45, 135, 238, 38);
+        txtSenha.setBackground(new java.awt.Color(51, 51, 51));
+        txtSenha.setForeground(new java.awt.Color(255, 255, 255));
+        txtSenha.setBorder(null);
+        txtSenha.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtSenhaFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtSenhaFocusLost(evt);
+            }
+        });
+        txtSenha.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtSenhaKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtSenhaKeyReleased(evt);
+            }
+        });
+        jPanel1.add(txtSenha);
+        txtSenha.setBounds(45, 135, 238, 38);
 
-      txtSenha.setBackground(new java.awt.Color(51, 51, 51));
-      txtSenha.setForeground(new java.awt.Color(255, 255, 255));
-      txtSenha.setBorder(null);
-      txtSenha.addFocusListener(new java.awt.event.FocusAdapter() {
-         public void focusGained(java.awt.event.FocusEvent evt) {
-            txtSenhaFocusGained(evt);
-         }
-         public void focusLost(java.awt.event.FocusEvent evt) {
-            txtSenhaFocusLost(evt);
-         }
-      });
-      txtSenha.addKeyListener(new java.awt.event.KeyAdapter() {
-         public void keyPressed(java.awt.event.KeyEvent evt) {
-            txtSenhaKeyPressed(evt);
-         }
-         public void keyReleased(java.awt.event.KeyEvent evt) {
-            txtSenhaKeyReleased(evt);
-         }
-      });
-      jPanel1.add(txtSenha);
-      txtSenha.setBounds(45, 135, 238, 38);
+        txtUsu.setBackground(new java.awt.Color(51, 51, 51));
+        txtUsu.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        txtUsu.setForeground(new java.awt.Color(255, 255, 255));
+        txtUsu.setText("Nome");
+        txtUsu.setBorder(null);
+        txtUsu.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtUsuFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtUsuFocusLost(evt);
+            }
+        });
+        txtUsu.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtUsuKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtUsuKeyReleased(evt);
+            }
+        });
+        jPanel1.add(txtUsu);
+        txtUsu.setBounds(45, 75, 238, 38);
 
-      txtUsu.setBackground(new java.awt.Color(51, 51, 51));
-      txtUsu.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-      txtUsu.setForeground(new java.awt.Color(255, 255, 255));
-      txtUsu.setText("Nome");
-      txtUsu.setBorder(null);
-      txtUsu.addFocusListener(new java.awt.event.FocusAdapter() {
-         public void focusGained(java.awt.event.FocusEvent evt) {
-            txtUsuFocusGained(evt);
-         }
-         public void focusLost(java.awt.event.FocusEvent evt) {
-            txtUsuFocusLost(evt);
-         }
-      });
-      txtUsu.addKeyListener(new java.awt.event.KeyAdapter() {
-         public void keyPressed(java.awt.event.KeyEvent evt) {
-            txtUsuKeyPressed(evt);
-         }
-         public void keyReleased(java.awt.event.KeyEvent evt) {
-            txtUsuKeyReleased(evt);
-         }
-      });
-      jPanel1.add(txtUsu);
-      txtUsu.setBounds(45, 75, 238, 38);
+        btnSubmit.setBackground(new java.awt.Color(102, 102, 102));
+        btnSubmit.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
+        btnSubmit.setText("Entrar");
+        btnSubmit.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 255, 113)));
+        btnSubmit.setContentAreaFilled(false);
+        btnSubmit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSubmit.setFocusPainted(false);
+        btnSubmit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSubmitActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSubmit);
+        btnSubmit.setBounds(45, 250, 238, 42);
 
-      btnSubmit.setBackground(new java.awt.Color(102, 102, 102));
-      btnSubmit.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-      btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
-      btnSubmit.setText("Entrar");
-      btnSubmit.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 255, 113)));
-      btnSubmit.setContentAreaFilled(false);
-      btnSubmit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-      btnSubmit.setFocusPainted(false);
-      btnSubmit.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            btnSubmitActionPerformed(evt);
-         }
-      });
-      jPanel1.add(btnSubmit);
-      btnSubmit.setBounds(45, 250, 238, 42);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/Ndpi/img/profile.png"))); // NOI18N
+        jLabel3.setBorder(null);
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(140, 0, 48, 60);
 
-      getContentPane().add(jPanel1);
-      jPanel1.setBounds(286, 121, 328, 336);
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(286, 121, 328, 336);
 
-      setSize(new java.awt.Dimension(916, 638));
-      setLocationRelativeTo(null);
-   }// </editor-fold>//GEN-END:initComponents
+        setSize(new java.awt.Dimension(916, 638));
+        setLocationRelativeTo(null);
+    }// </editor-fold>//GEN-END:initComponents
 
    private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
 
@@ -455,17 +456,17 @@ public class TelaLogin extends javax.swing.JFrame {
     }
 
 
-   // Variables declaration - do not modify//GEN-BEGIN:variables
-   private javax.swing.JLabel borderDois;
-   private javax.swing.JLabel borderUm;
-   private javax.swing.JButton btnSubmit;
-   private javax.swing.JLabel jLabel1;
-   private javax.swing.JLabel jLabel2;
-   private javax.swing.JLabel jLabel3;
-   private javax.swing.JPanel jPanel1;
-   private javax.swing.JLabel lblVer;
-   private javax.swing.JPasswordField txtSenha;
-   private javax.swing.JTextField txtSenhaVisivel;
-   private javax.swing.JTextField txtUsu;
-   // End of variables declaration//GEN-END:variables
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel borderDois;
+    private javax.swing.JLabel borderUm;
+    private javax.swing.JButton btnSubmit;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblVer;
+    private javax.swing.JPasswordField txtSenha;
+    private javax.swing.JTextField txtSenhaVisivel;
+    private javax.swing.JTextField txtUsu;
+    // End of variables declaration//GEN-END:variables
 }
