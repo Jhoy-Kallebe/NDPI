@@ -7,7 +7,7 @@
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Jhoy-Kallebe/NDPI?style=for-the-badge)
 
 <p>Tela Inicial do Adm</p>
-<img src="ndpiProject.png" width="600px;" alt="imagem tela usuario">
+<img src="ndpiProject.png" width="600px;" alt="imagem tela adm">
 
 > Projeto desenvolvido com o intuito de aprimorar minhas habilidades com a linguagem JAVA, cuja finalidade é administrar pessoas e cursos dentro de uma oficina institucional.
 
