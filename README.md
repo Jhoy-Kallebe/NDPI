@@ -6,7 +6,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/Jhoy-Kallebe/NDPI?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Jhoy-Kallebe/NDPI?style=for-the-badge)
 
-<p>Tela Inicial do Adm</p>
+<p align="center">Tela Inicial do Adm</p>
 <p align="center">
   <img src="ndpiProject.png" width="600px;" alt="imagem tela adm">
 </p>
